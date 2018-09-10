@@ -2548,7 +2548,8 @@ p code {
   border-radius: 2px;
   white-space: nowrap;
   font-size: 12px;
-  color: #e96900;
+  /*color: #e96900;*/
+  color: #e26d6d;
   background: #f8f8f8
 }
 

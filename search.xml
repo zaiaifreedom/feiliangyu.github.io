@@ -3,20 +3,14 @@
   
     
     <entry>
-      <title>php语言基础（一）</title>
-      <link href="/2015/05/10/php%E5%9F%BA%E7%A1%8001/"/>
-      <content type="html"><![CDATA[<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><ul><li><p>hello world </p><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">'hello world'</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>文件名<br>文件以.php后缀结尾，所有程序包含在<br><code>&lt;?php /** 这里是代码 **/ ?&gt;</code></p></li><li><p>变量<br>1、变量以$开头 字母/数字/下划线 不能以数字开头<br>2、大小写敏感（区分大小写）</p></li><li><p>数据类型<br>字符型 整形 浮点型 布尔型 数组（索引数组和关联数组）对象 resource NULL</p></li><li><p>单引号和双引号的区别<br>php中，双引号中的变量(<code>$var</code>)和特殊字符(<code>\r\n</code>之类)会被转义，单引号中的内容不会被转义（所以效率更高）。</p></li><li><p>内容输出<br><code>echo</code>  输出简单数据类型，如字符串、数值<br><code>print_r()</code> 函数  输出复杂数据类型，如数组、对象<br><code>var_dump()</code> 函数  输出对象的详细信息，如数组、对象</p></li><li><p>运算符<br>基本和<code>js</code>中的运算符保持一致<br><strong>注意:</strong><br>在php中表示字符串拼接用<code>.</code>号，js中使用<code>+</code>号</p></li><li><p>函数<br>和<code>js</code>基本一致，注意<code>php</code>中的函数名对大小写不敏感，可以有默认的参数</p></li><li><p>分支 循环语句<br>和<code>js</code>中基本一致</p></li><li><p>表单处理<br>表单中的<code>name</code>属性，是用来提供给服务端接受所传递的数据所接受的<br>表单中的<code>action</code>属性，是用来设置接受数据的处理程序<br>表单中的<code>method</code>属性，是用来设置发送数据的方式<br><strong>注意：</strong><br>当上传文件时，需要设置<code>enctype=&quot;multipart/form-data&quot;</code>,并且只能以<code>post</code>方式发送数据<br><code>$_GET[]</code> 用来接受<code>get</code>方式发送的数据<br><code>$_POST[]</code> 用来接受<code>post</code>方式发送的数据<br><code>$_FILES[]</code> 用来接受文件的上传</p></li><li><p>常见的PHP函数<br><code>in_array()</code> 检测元素是否在数组中（第一个参数是待检测的元素，第二个元素是数组）<br><code>count()</code> 计算数组的长度<br><code>array_key_exists()</code> 检测数组中是否存在<code>key</code>（第一个参数是待检测的key，第二个元素是数组）<br><code>file_get_contents()</code> 把整个文件内容读取成一个字符串（接受的参数是文件的路径） </p></li></ul>]]></content>
-      
-      <categories>
-          
-          <category> php </category>
-          
-      </categories>
+      <title>教师节的这天</title>
+      <link href="/2018/09/10/follow-heart/"/>
+      <content type="html"><![CDATA[<p>其实，在这样一个无所事实的夜晚，如果不是教师节的“引子”诱导着我回忆少时的成长，真的找不到什么契机来写下此刻的心情💢。</p><a id="more"></a><p>其实，想想都一样，我们总想着等自己长大了再去好好报答我们的父母，我们总想着学有所成了再去好好报答我们的老师，似乎也总想着有着足够渊博的代码经验才去总结我们所遇到的问题。</p><p>答案是：我们始终在消费和透支未来的时间和理想去做当下我们能够完成的“小事”。</p><p>这真的是一件小事，在你看来，但是好多时候我们都败给了小事。</p><p>刚才，自己还突然想过这么一段话： “朽木遇巧匠，化腐朽为神奇”。如遇巧匠，多磨多砺，匠心难寻，自强不息。</p><p>好了，汤汁已满，多浇则腻。</p>]]></content>
       
       
         <tags>
             
-            <tag> php </tag>
+            <tag> mood </tag>
             
         </tags>
       
