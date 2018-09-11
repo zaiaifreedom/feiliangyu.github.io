@@ -1134,7 +1134,7 @@ a {
 }
 
 a:active, a:link, a:visited {
-  color: #444
+  color: #555
 }
 
 a:hover {
@@ -1953,7 +1953,7 @@ time {
 
 .archive-item > .archive-time {
   width: 30%;
-  font-size: .8rem;
+  font-size: 1rem;
   color: rgba(0, 0, 0, .65);
   text-align: center
 }
@@ -2783,12 +2783,13 @@ pre,
 pre,
 code {
   font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+  -webkit-font-smoothing: auto;
 }
 code {
   word-break: break-all;
   background: #eee;
   -webkit-font-smoothing: auto;
-  padding: 0 0.3em;
+  padding: 0.2em 0.4em;
   font-size: 14px;
 }
 pre code {
