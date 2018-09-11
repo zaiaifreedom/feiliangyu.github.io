@@ -116,7 +116,8 @@ h1, h2, h3, h4, h5, h6, th {
   color: #444;
   font-weight: 400;
   letter-spacing: 1px;
-  word-spacing: 1px
+  word-spacing: 1px;
+  border-bottom: 1px solid #ddd;
 }
 
 h1 {
@@ -142,7 +143,7 @@ h4, h5, h6 {
 .typo p {
   margin: 0 0 1.3em .2em;
   line-height: 1.9;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   color: #444;
   letter-spacing: .12px;
@@ -232,7 +233,7 @@ dd, dt {
 
 .typo a {
   font-size: .9rem;
-  color: #e26d6d !important;
+  color: #4183c4 !important;
   text-decoration: underline;
   font-family: Arial
 }
@@ -1258,7 +1259,11 @@ time {
 .header-nav {
   margin: 0 auto;
   height: 4rem;
-  line-height: 4rem
+  line-height: 4rem;
+}
+
+.header-nav span {
+  font-size: 16px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -1281,7 +1286,7 @@ time {
 
 @media screen and (min-width: 1200px) {
   .header-nav {
-    max-width: 54%
+    max-width: 58%
   }
 }
 
@@ -1966,12 +1971,13 @@ time {
   width: 250px;
   height: 100%;
   top: 16%;
-  left: 79%
+  left: 4%
 }
 
 .toc-title {
   display: block;
-  text-align: center;
+  text-align: left;
+  margin-left: 14px;
   font-size: .95rem;
   color: rgba(0, 0, 0, .5);
   cursor: pointer
@@ -2036,7 +2042,7 @@ time {
 .toc-fixed {
   position: fixed;
   top: 2%;
-  left: 79%;
+  left: 4%;
   height: 86%
 }
 
