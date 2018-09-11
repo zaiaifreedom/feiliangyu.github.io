@@ -192,7 +192,7 @@ ol p, ul p {
 }
 
 li {
-  font-size: 15px;
+  font-size: 16px;
   margin: 8px 0;
   position: relative
 }
@@ -2535,7 +2535,7 @@ time {
 }
 
 pre * {
-  font-size: 13px !important;
+  font-size: 12.5px !important;
 }
 
 .ml10 {
@@ -2782,7 +2782,7 @@ pre,
 }
 pre,
 code {
-  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+  font-family:  Menlo, monospace, "Input Mono", "PT Mono", Consolas, Monaco;
   -webkit-font-smoothing: auto;
 }
 code {
