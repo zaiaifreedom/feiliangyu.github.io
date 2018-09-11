@@ -727,7 +727,8 @@ body {
 
 .highlight {
   position: relative;
-  width: 100%
+  width: 100%;
+  margin-bottom: 1.4em;
 }
 
 .highlight:after {
@@ -2539,7 +2540,6 @@ pre * {
 .typo a {
   color: #42b983;
   font-weight: 600;
-  text-decoration: none;
 }
 
 p code {
@@ -2728,33 +2728,33 @@ a.button.gray {
 .highlight .code .line {
   min-height: 1.5em;
 }
-.highlight.html .code:before,
-.highlight.js .code:before,
-.highlight.bash .code:before,
-.highlight.css .code:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #ccc;
-  text-align: right;
-  font-size: 0.75em;
-  padding: 5px 10px 0;
-  line-height: 15px;
-  height: 15px;
-  font-weight: 600;
-}
-.highlight.html .code:before {
-  content: "HTML";
-}
-.highlight.js .code:before {
-  content: "JS";
-}
-.highlight.bash .code:before {
-  content: "Shell";
-}
-.highlight.css .code:before {
-  content: "CSS";
-}
+/*.highlight.html .code:before,*/
+/*.highlight.js .code:before,*/
+/*.highlight.bash .code:before,*/
+/*.highlight.css .code:before {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*color: #ccc;*/
+  /*text-align: right;*/
+  /*font-size: 0.75em;*/
+  /*padding: 5px 10px 0;*/
+  /*line-height: 15px;*/
+  /*height: 15px;*/
+  /*font-weight: 600;*/
+/*}*/
+/*.highlight.html .code:before {*/
+  /*content: "HTML";*/
+/*}*/
+/*.highlight.js .code:before {*/
+  /*content: "JS";*/
+/*}*/
+/*.highlight.bash .code:before {*/
+  /*content: "Shell";*/
+/*}*/
+/*.highlight.css .code:before {*/
+  /*content: "CSS";*/
+/*}*/
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

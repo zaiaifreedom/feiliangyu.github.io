@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   
   
-  <title>  教师节的这天 |   feiliangyu blog </title>
+  <title>  Linux解压相关命令 |   feiliangyu blog </title>
 
  
   
@@ -73,20 +73,20 @@
 	<div class="post-header">
 
 	<p class="post-title">	
-		教师节的这天
+		Linux解压相关命令
 	</p>
 			
 
 	<div class="meta-info">	
 	<span>
-		9月 10, 2018
+		5月 08, 2017
 	</span>
 
 	
 	
 		<i class="iconfont icon-words"></i>
 		<span>
-			282
+			383
 		</span>
 	
 
@@ -101,19 +101,29 @@
 	  <div class="typo post-content slideDownMin">
 
 		
-			
-				<div class="banner" src="/assets/18091001.png" style="background-image:url(/assets/18091001.png)"> </div>	
-
-		
 
 			
-					<p>其实，在这样一个无所事实的夜晚，如果不是教师节的“引子”诱导着我回忆少时的成长，真的找不到什么契机来写下此刻的心情💢。</p>
+					<blockquote>
+<p>熟悉下 linux 对压缩和解压缩文件的命令</p>
+</blockquote>
+<p>首先压缩文件的格式一般分为：<code>*.tar</code> <code>*.tar.gz</code> <code>*.tar.bz2</code> <code>*.tar.Z</code> 这几类，关于这几类压缩格式的历史就不多拓展了，直接开始操作：</p>
 <a id="more"></a>
-<p>其实，想想都一样，我们总想着等自己长大了再去好好报答我们的父母，我们总想着学有所成了再去好好报答我们的老师，似乎也总想着有着足够渊博的代码经验才去总结我们所遇到的问题。</p>
-<p>答案是：我们始终在消费和透支未来的时间和理想去做当下我们能够完成的“小事”。</p>
-<p>这真的是一件小事，在你看来，但是好多时候我们都败给了小事。</p>
-<p>刚才，自己还突然想过这么一段话： “朽木遇巧匠，化腐朽为神奇”。如遇巧匠，多磨多砺，匠心难寻，自强不息。</p>
-<p>好了，汤汁已满，多浇则腻。</p>
+<ol>
+<li>解压 <code>.tar</code> 相关的文件（默认文件中内容被解压到当前文件夹）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xf *.tar</span><br><span class="line">tar -xzf *.tar.gz</span><br><span class="line">tar -xjf *.tar.bz2</span><br><span class="line">tar -xZf *.tar.Z</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>解压 <code>.tar</code> 压缩包到指定的文件夹</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xf *.tar -C directoryname</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>其他相关的命令参数</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-c  建立压缩档案</span><br><span class="line">-x  进行解压</span><br><span class="line">-t  查看内容</span><br><span class="line">-v  显示过程</span><br><span class="line">-r  追加内容</span><br><span class="line">-u  更新内容</span><br><span class="line">-f  使用档案名字</span><br><span class="line">-j  .bz2后缀的bz2压缩文件</span><br><span class="line">-z  .gz后缀的gzip压缩文件</span><br><span class="line">-Z  .Z后缀的compress压缩文件</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>关于解压 rar 文件</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install unrar</span><br><span class="line">unrar x 解压的目录</span><br></pre></td></tr></table></figure>
   	
 					
 	  </div>     
@@ -125,7 +135,7 @@
 
       
         <i class="iconfont icon-tag"></i>     
-          <a class="tag-link" href="/tags/mood/">mood</a>    
+          <a class="tag-link" href="/tags/linux/">linux</a>    
       	
 </div>
 
@@ -199,8 +209,14 @@
 
       </div>  
     <nav class="pf-paginator">
-           
+      
+         
+          <a href="/2017/06/21/new-vue/" data-hover="vue项目的初探">上一篇</a>      
+            
         
+      
+        
+        <a href="/2017/04/03/package-lock-json/" data-hover="package-lock文件"> 下一篇</a>
             
   </nav>   
   </div>

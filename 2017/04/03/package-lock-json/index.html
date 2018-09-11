@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  Package-Lock文件 |   feiliangyu blog </title>
+
+ 
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+
+
+  <link rel="stylesheet" href="/nayo.min.css"> 
+</head>  
+  <body>   
+    
+      <header class="header">
+	
+  <nav class="header-nav">        
+
+    <span class="iconfont icon-menu mobile-toggle"></span>   	
+
+    <div class="header-menu">          
+              
+          
+            <a class="header-menu-link" id="header-menu-home" href="/">
+              <i class="iconfont icon-home">  
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-archives" href="/archives">
+              <i class="iconfont icon-archives">  
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-tags" href="/tags">
+              <i class="iconfont icon-tags">  
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-about" href="/about">
+              <i class="iconfont icon-about">  
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-search">
+              <i class="iconfont icon-search">  
+            </i></a>
+          
+                  
+    </div>  
+    
+  </nav>
+</header>
+
+   
+
+      <div class="container">       
+          
+          
+            <section class="main">  
+          
+
+          <article class="post">
+  
+	<div class="post-header">
+
+	<p class="post-title">	
+		package-lock文件
+	</p>
+			
+
+	<div class="meta-info">	
+	<span>
+		4月 03, 2017
+	</span>
+
+	
+	
+		<i class="iconfont icon-words"></i>
+		<span>
+			542
+		</span>
+	
+
+	<span id="busuanzi_container_page_pv" class="ml10">
+  	本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+</div>
+
+</div> 
+	 
+
+	  <div class="typo post-content slideDownMin">
+
+		
+
+			
+					<p>今天在安装reduce的时候，ajv模块出现报错，于是就一通google</p>
+<p> 其实这里的问题也很简单，翻阅 <code>package-lock.json</code> 文件，里面可以找到webpack中的依赖文件</p>
+<a id="more"></a>
+ <figure class="highlight"><table><tr><td class="code"><pre><span class="line">"ajv-keywords": &#123;</span><br><span class="line">      "version": "3.2.0",</span><br><span class="line">      "resolved": "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.2.0.tgz",</span><br><span class="line">      "integrity": "sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo="</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
+<p> 这里面没有对应ajv的直接依赖包，这就导致了刚才的问题 </p>
+<p> <a href="mailto:`ajv-keywords@3.2.0" target="_blank" rel="noopener">`ajv-keywords@3.2.0</a> requires a peer of ajv@^6.0.0 but none is installed.`</p>
+<p> 结局方法也比较简单，但是需要我们对 <code>package.json</code> 这个文件中的内容有所了解，这里面记录了包的版本依赖等控制信息，确保在任何平台下执行 <code>npm install</code> 后都可以得到相同的包。</p>
+<p> <a href="https://juejin.im/entry/5ae00835518825673277e460" target="_blank" rel="noopener">掘金小手册</a></p>
+<p> 在这里我们执行 <code>npm i -D ajv</code> 就可以</p>
+<p> 当然了，这里面也有不少的坑</p>
+<p> <a href="https://toutiao.io/posts/hrihhs/preview" target="_blank" rel="noopener">开发者头条</a></p>
+<p> 以后增加或者删除依赖包，只能够通过 <code>package.json</code> 这一种方式，其他的方式都会被覆盖。</p>
+  	
+					
+	  </div>     
+	  
+
+	
+<div class="post-meta">
+      
+
+      
+        <i class="iconfont icon-tag"></i>     
+          <a class="tag-link" href="/tags/npm/">npm</a>    
+      	
+</div>
+
+
+
+
+
+<div class="post-footer">
+  <div class="pf-left">
+      <img class="pf-avatar" src="/images/header.jpg">
+      <p class="pf-des">hi,i am feiliangyu</p>
+  </div>
+
+  <div class="pf-right">           
+      <div class="pf-links">
+        
+
+
+
+
+<span class="donate-btn">
+	<span class="iconfont icon-donate"></span>
+</span>
+
+
+<div id="donate-box" class="sildeUpMin">
+
+	<span class="donate-cancel iconfont icon-cancel"></span>
+
+	<div class="donate-img-box">
+		<img id="donate-qr-wechat" class="noLazyLoad donate-img" src="/images/donate1.png" alt="No Donate Image!">	
+		<img id="donate-qr-alipay" class="noLazyLoad donate-img" src="/images/donate2.png" alt="No Donate Image!">	
+	</div>
+
+	<span class="donate-word">世界美好 你也是</span>
+
+	<div class="donate-list">
+		<span class="iconfont icon-donate-wechat"></span>
+		<span class="iconfont icon-donate-alipay"></span>
+	</div>
+
+</div>
+
+ 
+        
+	
+<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn">
+	<span class="iconfont icon-share"></span>
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		   			             
+            <a class="iconfont  icon-share-qq -mob-share-qq"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weixin -mob-share-weixin"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weibo -mob-share-weibo"></a>		
+     	   			             
+            <a class="iconfont  icon-share-douban -mob-share-douban"></a>		
+     	   			             
+            <a class="iconfont  icon-share-facebook -mob-share-facebook"></a>		
+     	   			             
+            <a class="iconfont  icon-share-twitter -mob-share-twitter"></a>		
+     	   			             
+            <a class="iconfont  icon-share-google -mob-share-google"></a>		
+     	   
+	</div>	
+
+      </div>  
+    <nav class="pf-paginator">
+      
+         
+          <a href="/2017/05/08/tar/" data-hover="Linux解压相关命令">上一篇</a>      
+            
+        
+            
+  </nav>   
+  </div>
+</div> 
+	
+    <div id="disqus_thread"></div>
+
+    <script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://'+'feiliangyu'+'.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());    
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+
+	
+</article>
+
+	<div class="toc-container">
+			<div class="sidebar">
+			<p class="toc-title">
+				<i class="iconfont icon-toc"></i>
+				目录
+			</p>
+			<div class="toc-list">
+				
+			</div>
+		</div>
+	</div>
+
+          </section> 
+      </div>            
+    
+    <a id="backTop">
+      <span>
+        <i class="iconfont icon-backtotop"></i>
+      </span>
+    </a> 
+
+  
+    
+    <div class="search-container sildeUpMin">
+        <div class="search-header">
+            <input type="text" placeholder="输入你想搜索的" id="search-input" class="search-input">
+            <span class="search-cancel">
+                <i class="iconfont icon-cancel">
+            </i></span>
+        </div>
+        <div id="search-result" class="search-result"></div>
+    </div>
+ 
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon" src="/images/favicon.png">   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">首页
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">归档
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/tags">标签
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/about">关于
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">搜索 </a>                 
+            
+         
+      
+</div>        
+    
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac2c7d1cdf2fffdf707d28e6ac012eb6"; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){
+	i['GoogleAnalyticsObject']=r;
+	i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-125175556-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+     
+    
+
+
+
+
+<footer id="footer">	    
+
+		
+		<div class="footer-copyright">
+		&copy;
+		
+		2018		
+	
+		Feiliangyu
+		<br>
+
+		Theme By
+		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>
+		<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+		</div>
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</footer>   
+
+  
+
+    <script src="/nayo.bundle.js"></script>           
+  </body>        
+</html>
