@@ -1134,7 +1134,7 @@ a {
 }
 
 a:active, a:link, a:visited {
-  color: #232729
+  color: #444
 }
 
 a:hover {
@@ -2548,192 +2548,196 @@ pre * {
   font-weight: 600;
 }
 
-p code {
-  padding: 3px 5px;
-  margin: 0 2px;
-  border-radius: 2px;
-  white-space: nowrap;
-  font-size: 12px;
+#comment-policy {
+  display: none;
+}
+
+/*p code {*/
+  /*padding: 3px 5px;*/
+  /*margin: 0 2px;*/
+  /*border-radius: 2px;*/
+  /*white-space: nowrap;*/
+  /*font-size: 12px;*/
+  /*!*color: #e96900;*!*/
+  /*color: #e26d6d;*/
+  /*background: #f8f8f8*/
+/*}*/
+
+/*.gutter pre {*/
+  /*color: #999;*/
+/*}*/
+/*pre {*/
+  /*color: #525252;*/
+/*}*/
+/*pre .function .keyword,*/
+/*pre .constant {*/
+  /*color: #0092db;*/
+/*}*/
+/*pre .keyword,*/
+/*pre .attribute {*/
   /*color: #e96900;*/
-  color: #e26d6d;
-  background: #f8f8f8
-}
+/*}*/
+/*pre .number,*/
+/*pre .literal {*/
+  /*color: #ae81ff;*/
+/*}*/
+/*pre .tag,*/
+/*pre .tag .title,*/
+/*pre .change,*/
+/*pre .winutils,*/
+/*pre .flow,*/
+/*pre .lisp .title,*/
+/*pre .clojure .built_in,*/
+/*pre .nginx .title,*/
+/*pre .tex .special {*/
+  /*color: #2973b7;*/
+/*}*/
+/*pre .class .title {*/
+  /*color: #fff;*/
+/*}*/
+/*pre .symbol,*/
+/*pre .symbol .string,*/
+/*pre .value,*/
+/*pre .regexp {*/
+  /*color: #42b983;*/
+/*}*/
+/*pre .title {*/
+  /*color: #a6e22e;*/
+/*}*/
+/*pre .tag .value,*/
+/*pre .string,*/
+/*pre .subst,*/
+/*pre .haskell .type,*/
+/*pre .preprocessor,*/
+/*pre .ruby .class .parent,*/
+/*pre .built_in,*/
+/*pre .sql .aggregate,*/
+/*pre .django .template_tag,*/
+/*pre .django .variable,*/
+/*pre .smalltalk .class,*/
+/*pre .javadoc,*/
+/*pre .django .filter .argument,*/
+/*pre .smalltalk .localvars,*/
+/*pre .smalltalk .array,*/
+/*pre .attr_selector,*/
+/*pre .pseudo,*/
+/*pre .addition,*/
+/*pre .stream,*/
+/*pre .envvar,*/
+/*pre .apache .tag,*/
+/*pre .apache .cbracket,*/
+/*pre .tex .command,*/
+/*pre .prompt {*/
+  /*color: #42b983;*/
+/*}*/
+/*pre .comment,*/
+/*pre .java .annotation,*/
+/*pre .python .decorator,*/
+/*pre .template_comment,*/
+/*pre .pi,*/
+/*pre .doctype,*/
+/*pre .deletion,*/
+/*pre .shebang,*/
+/*pre .apache .sqbracket,*/
+/*pre .tex .formula {*/
+  /*color: #b3b3b3;*/
+/*}*/
+/*pre .coffeescript .javascript,*/
+/*pre .javascript .xml,*/
+/*pre .tex .formula,*/
+/*pre .xml .javascript,*/
+/*pre .xml .vbscript,*/
+/*pre .xml .css,*/
+/*pre .xml .cdata {*/
+  /*opacity: 0.5;*/
+/*}*/
 
-.gutter pre {
-  color: #999;
-}
-pre {
-  color: #525252;
-}
-pre .function .keyword,
-pre .constant {
-  color: #0092db;
-}
-pre .keyword,
-pre .attribute {
-  color: #e96900;
-}
-pre .number,
-pre .literal {
-  color: #ae81ff;
-}
-pre .tag,
-pre .tag .title,
-pre .change,
-pre .winutils,
-pre .flow,
-pre .lisp .title,
-pre .clojure .built_in,
-pre .nginx .title,
-pre .tex .special {
-  color: #2973b7;
-}
-pre .class .title {
-  color: #fff;
-}
-pre .symbol,
-pre .symbol .string,
-pre .value,
-pre .regexp {
-  color: #42b983;
-}
-pre .title {
-  color: #a6e22e;
-}
-pre .tag .value,
-pre .string,
-pre .subst,
-pre .haskell .type,
-pre .preprocessor,
-pre .ruby .class .parent,
-pre .built_in,
-pre .sql .aggregate,
-pre .django .template_tag,
-pre .django .variable,
-pre .smalltalk .class,
-pre .javadoc,
-pre .django .filter .argument,
-pre .smalltalk .localvars,
-pre .smalltalk .array,
-pre .attr_selector,
-pre .pseudo,
-pre .addition,
-pre .stream,
-pre .envvar,
-pre .apache .tag,
-pre .apache .cbracket,
-pre .tex .command,
-pre .prompt {
-  color: #42b983;
-}
-pre .comment,
-pre .java .annotation,
-pre .python .decorator,
-pre .template_comment,
-pre .pi,
-pre .doctype,
-pre .deletion,
-pre .shebang,
-pre .apache .sqbracket,
-pre .tex .formula {
-  color: #b3b3b3;
-}
-pre .coffeescript .javascript,
-pre .javascript .xml,
-pre .tex .formula,
-pre .xml .javascript,
-pre .xml .vbscript,
-pre .xml .css,
-pre .xml .cdata {
-  opacity: 0.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-strong {
-  font-weight: 600;
-  color: #2c3e50;
-}
-code,
-pre {
-  font-family: "Roboto Mono", Monaco, courier, monospace;
-  font-size: 0.8em;
-  background-color: #f8f8f8;
-  -webkit-font-smoothing: initial;
-  -moz-osx-font-smoothing: initial;
-}
-code {
-  color: #e96900;
-  padding: 3px 5px;
-  margin: 0 2px;
-  border-radius: 2px;
-  white-space: nowrap;
-}
-em {
-  color: #7f8c8d;
-}
-p {
-  word-spacing: 0.05em;
-}
-a.button {
-  padding: 0.75em 2em;
-  border-radius: 2em;
-  display: inline-block;
-  color: #fff;
-  background-color: #4fc08d;
-  transition: all 0.15s ease;
-  box-sizing: border-box;
-  border: 1px solid #4fc08d;
-}
-a.button.has-icon {
-  position: relative;
-  text-indent: 1.4em;
-}
-a.button.has-icon > svg {
-  position: absolute;
-  left: 0.4em;
-  top: 0.4em;
-  width: 2em;
-}
-a.button.white {
-  background-color: #fff;
-  color: #42b983;
-}
-a.button.gray {
-  background-color: #f6f6f6;
-  color: #7f8c8d;
-  border-color: #f6f6f6;
-}
-.highlight {
-  overflow-x: auto;
-  background-color: #f8f8f8;
-  padding: 0.4em 0 0;
-  line-height: 1.1em;
-  border-radius: 2px;
-  position: relative;
-}
-.highlight table,
-.highlight tr,
-.highlight td {
-  width: 100%;
-  border-collapse: collapse;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.highlight .gutter {
-  width: 1.5em;
-}
-.highlight .code pre {
-  padding: 1.2em 1.4em;
-  line-height: 1.5em;
-  margin: 0;
-}
-.highlight .code .line {
-  min-height: 1.5em;
-}
+/*h1,*/
+/*h2,*/
+/*h3,*/
+/*h4,*/
+/*strong {*/
+  /*font-weight: 600;*/
+  /*color: #2c3e50;*/
+/*}*/
+/*code,*/
+/*pre {*/
+  /*font-family: "Roboto Mono", Monaco, courier, monospace;*/
+  /*font-size: 0.8em;*/
+  /*background-color: #f8f8f8;*/
+  /*-webkit-font-smoothing: initial;*/
+  /*-moz-osx-font-smoothing: initial;*/
+/*}*/
+/*code {*/
+  /*color: #e96900;*/
+  /*padding: 3px 5px;*/
+  /*margin: 0 2px;*/
+  /*border-radius: 2px;*/
+  /*white-space: nowrap;*/
+/*}*/
+/*em {*/
+  /*color: #7f8c8d;*/
+/*}*/
+/*p {*/
+  /*word-spacing: 0.05em;*/
+/*}*/
+/*a.button {*/
+  /*padding: 0.75em 2em;*/
+  /*border-radius: 2em;*/
+  /*display: inline-block;*/
+  /*color: #fff;*/
+  /*background-color: #4fc08d;*/
+  /*transition: all 0.15s ease;*/
+  /*box-sizing: border-box;*/
+  /*border: 1px solid #4fc08d;*/
+/*}*/
+/*a.button.has-icon {*/
+  /*position: relative;*/
+  /*text-indent: 1.4em;*/
+/*}*/
+/*a.button.has-icon > svg {*/
+  /*position: absolute;*/
+  /*left: 0.4em;*/
+  /*top: 0.4em;*/
+  /*width: 2em;*/
+/*}*/
+/*a.button.white {*/
+  /*background-color: #fff;*/
+  /*color: #42b983;*/
+/*}*/
+/*a.button.gray {*/
+  /*background-color: #f6f6f6;*/
+  /*color: #7f8c8d;*/
+  /*border-color: #f6f6f6;*/
+/*}*/
+/*.highlight {*/
+  /*overflow-x: auto;*/
+  /*background-color: #f8f8f8;*/
+  /*padding: 0.4em 0 0;*/
+  /*line-height: 1.1em;*/
+  /*border-radius: 2px;*/
+  /*position: relative;*/
+/*}*/
+/*.highlight table,*/
+/*.highlight tr,*/
+/*.highlight td {*/
+  /*width: 100%;*/
+  /*border-collapse: collapse;*/
+  /*padding: 0;*/
+  /*margin: 0;*/
+  /*border: 0;*/
+/*}*/
+/*.highlight .gutter {*/
+  /*width: 1.5em;*/
+/*}*/
+/*.highlight .code pre {*/
+  /*padding: 1.2em 1.4em;*/
+  /*line-height: 1.5em;*/
+  /*margin: 0;*/
+/*}*/
+/*.highlight .code .line {*/
+  /*min-height: 1.5em;*/
+/*}*/
 /*.highlight.html .code:before,*/
 /*.highlight.js .code:before,*/
 /*.highlight.bash .code:before,*/
@@ -2762,5 +2766,173 @@ a.button.gray {
   /*content: "CSS";*/
 /*}*/
 
-
+pre,
+.highlight {
+  background: #f7f7f7;
+  margin: 20px 0;
+  padding: 15px;
+  overflow: auto;
+  font-size: 13px;
+  color: #4d4d4c;
+  line-height: 1.6;
+}
+.highlight .gutter pre,
+.gist .gist-file .gist-data .line-numbers {
+  color: #666;
+}
+pre,
+code {
+  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+}
+code {
+  word-break: break-all;
+  background: #eee;
+  -webkit-font-smoothing: auto;
+  padding: 0 0.3em;
+  font-size: 14px;
+}
+pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.highlight pre {
+  border: none;
+  margin: 0;
+  padding: 1px;
+}
+.highlight table {
+  margin: 0;
+  width: auto;
+  border: none;
+}
+.highlight td {
+  border: none;
+  padding: 0;
+}
+.highlight figcaption {
+  font-size: 0.85em;
+  color: #8e908c;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.highlight figcaption:before,
+.highlight figcaption:after {
+  content: " ";
+  display: table;
+}
+.highlight figcaption:after {
+  clear: both;
+}
+.highlight figcaption a {
+  float: right;
+}
+.highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+.highlight .line {
+  height: 20px;
+}
+.gist {
+  margin: 20px 0;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px 0;
+  background: #f7f7f7;
+  padding: 15px 40px 15px 15px;
+}
+.gist .gist-file {
+  border: none;
+  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+  margin: 0;
+}
+.gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+.gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+.gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+.gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.gist .gist-file .gist-meta {
+  background: #f7f7f7;
+  color: #8e908c;
+  font: 13px Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 40px;
+}
+.gist .gist-file .gist-meta a {
+  color: color-link;
+  font-weight: normal;
+}
+.gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+pre .comment {
+  color: #8e908c;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #c82829;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f5871f;
+}
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #718c00;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #718c00;
+}
+pre .title,
+pre .css .hexcolor {
+  color: #3e999f;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #4271ae;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #8959a8;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
