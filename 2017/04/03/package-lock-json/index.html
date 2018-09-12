@@ -92,7 +92,7 @@
 	
 		<i class="iconfont icon-words"></i>
 		<span>
-			546
+			540
 		</span>
 	
 
@@ -112,9 +112,9 @@
 					<p>今天在安装reduce的时候，ajv模块出现报错，于是就一通google</p>
 <p> 其实这里的问题也很简单，翻阅 <code>package-lock.json</code> 文件，里面可以找到webpack中的依赖文件</p>
 <a id="more"></a>
- <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"ajv-keywords": &#123;</span><br><span class="line">      "version": "3.2.0",</span><br><span class="line">      "resolved": "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.2.0.tgz",</span><br><span class="line">      "integrity": "sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo="</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
+ <figure class="highlight"><table><tr><td class="code"><pre><span class="line">"ajv-keywords": &#123;</span><br><span class="line">      "version": "3.2.0",</span><br><span class="line">      "resolved": "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.2.0.tgz",</span><br><span class="line">      "integrity": "sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo="</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
 <p> 这里面没有对应ajv的直接依赖包，这就导致了刚才的问题 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ajv-keywords@3.2.0 requires a peer of ajv@^6.0.0 but none is installed.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ajv-keywords@3.2.0 requires a peer of ajv@^6.0.0 but none is installed.</span><br></pre></td></tr></table></figure>
 <p> 结局方法也比较简单，但是需要我们对 <code>package.json</code> 这个文件中的内容有所了解，这里面记录了包的版本依赖等控制信息，确保在任何平台下执行 <code>npm install</code> 后都可以得到相同的包。</p>
 <p> <a href="https://juejin.im/entry/5ae00835518825673277e460" target="_blank" rel="noopener">掘金小手册</a></p>
 <p> 在这里我们执行 <code>npm i -D ajv</code> 就可以</p>
