@@ -1,365 +1,555 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
-<html>
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.7.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zaiaifreedom.github.io","root":"/","scheme":"Pisces","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":false,"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Do not give up! even die!">
+<meta name="keywords" content="前端开发">
+<meta property="og:type" content="website">
+<meta property="og:title" content="zaiaifreedom">
+<meta property="og:url" content="https://zaiaifreedom.github.io/index.html">
+<meta property="og:site_name" content="zaiaifreedom">
+<meta property="og:description" content="Do not give up! even die!">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="zaiaifreedom">
+<meta name="twitter:description" content="Do not give up! even die!">
+
+<link rel="canonical" href="https://zaiaifreedom.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>zaiaifreedom</title>
   
-  
-  <title>  Blog </title>
-
- 
-  
-    <link rel="icon" href="/images/favicon.png">
-  
-
-
-  <link rel="stylesheet" href="/nayo.min.css"> 
-</head>  
-  <body>   
-    
-      <header class="header">
-	
-  <nav class="header-nav">        
-
-    <span class="iconfont icon-menu mobile-toggle"></span>   	
-
-    
-
-    <div class="header-menu">          
-              
-          
-            <a class="header-menu-link" id="header-menu-home" href="/">
-              <i class="iconfont icon-home">
-              <span>首页</span>
-            </i></a>     
-          
-              
-          
-            <a class="header-menu-link" id="header-menu-archives" href="/archives">
-              <i class="iconfont icon-archives">
-              <span>归档</span>
-            </i></a>     
-          
-              
-          
-            <a class="header-menu-link" id="header-menu-tags" href="/tags">
-              <i class="iconfont icon-tags">
-              <span>标签</span>
-            </i></a>     
-          
-              
-          
-            <a class="header-menu-link" id="header-menu-about" href="/about">
-              <i class="iconfont icon-about">
-              <span>关于</span>
-            </i></a>     
-          
-              
-          
-            <a class="header-menu-link" id="header-menu-search">
-              <i class="iconfont icon-search">
-            </i></a>
-          
-                  
-    </div>  
-    
-  </nav>
-</header>
-
-   
-
-      <div class="container">       
-          
-          
-            <section class="main">  
-          
-
-          
 
 
 
 
-<div class="profile sildeUpMin">
-	
-		<img class="avatar" src="/images/header.jpg">
 
-		<p class="author">Feiliangyu Blog</p>
-		
-		<div class="social">
-   		      	
-			<a target="_blank" class="social-links" href="">		
-				<i class="iconfont icon-Github">
-			</i></a>	
-	          	
-			<a target="_blank" class="social-links" href="">		
-				<i class="iconfont icon-Weibo">
-			</i></a>	
-	          	
-			<a target="_blank" class="social-links" href="">		
-				<i class="iconfont icon-Facebook">
-			</i></a>	
-	          	
-			<a target="_blank" class="social-links" href="">		
-				<i class="iconfont icon-Instagram">
-			</i></a>	
-	          	
-			<a target="_blank" class="social-links" href="">		
-				<i class="iconfont icon-Neteasemusic">
-			</i></a>	
-	    
-    	</div>		
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">zaiaifreedom</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Coding change life!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
 </div>
 
 
-    	  	
-  		
-    			
 
-<article class="article">		
-	   
-	<div class="article-header">
-	    
-		<a class="article-title" href="/2017/06/21/new-vue/">vue项目的初探</a>  
-	       
-		 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-		<div class="article-meta">
-			<time>6月 21, 2017</time>
-			
-				<span class="iconfont icon-star"></span>
-				            
-						<a class="article-tag" href="/tags/vue/">vue</a>           
-				
-			
-		</div>
-	</div>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
+  </li>
+        <li class="menu-item menu-item-about">
 
-	
-		<div class="thumb">
-			<div class="banner lazyload" data-origin="/assets/18091002.jpg" data-src="/assets/18091002.jpg" style="background-image: url("/images/placeholder.png");" images="" placeholder.png");"=""></div>
-		</div>
-	
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
-    
-	<div class="typo article-excerpt">	
-		
-			<blockquote>
-<p>这是刚接触vue的一个项目，开发功能的逻辑上和jquery有很大的差异，有很多的担心也有不少的惊喜，就这样，堆出了一个展现为主的网站模型</p>
-</blockquote>
-<h3 id="First-blood"><a href="#First-blood" class="headerlink" title="First blood"></a>First blood</h3><p>首先，来说一下项目的路由配置，唯一要注意的是：pc和app是同在一个体系中</p>
-		  	  
-	</div>
+  </li>
+        <li class="menu-item menu-item-tags">
 
-	<div class="article-bottom">
-		<a class="article-readmore" href="/2017/06/21/new-vue/">阅读更多</a> 	
-	</div>	
-    
-</article>     
-     	
-    	  	
-  		
-    			
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
-<article class="article">		
-	   
-	<div class="article-header">
-	    
-		<a class="article-title" href="/2017/05/08/tar/">Linux解压相关命令</a>  
-	       
-		 
+  </li>
+        <li class="menu-item menu-item-categories">
 
-		<div class="article-meta">
-			<time>5月 08, 2017</time>
-			
-				<span class="iconfont icon-star"></span>
-				            
-						<a class="article-tag" href="/tags/linux/">linux</a>           
-				
-			
-		</div>
-	</div>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
+  </li>
+        <li class="menu-item menu-item-archives">
 
-	
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-	<div class="typo article-excerpt">	
-		
-			<blockquote>
-<p>熟悉下 linux 对压缩和解压缩文件的命令</p>
-</blockquote>
-<p>首先压缩文件的格式一般分为：<code>*.tar</code> <code>*.tar.gz</code> <code>*.tar.bz2</code> <code>*.tar.Z</code> 这几类，关于这几类压缩格式的历史就不多拓展了，直接开始操作：</p>
-		  	  
-	</div>
-
-	<div class="article-bottom">
-		<a class="article-readmore" href="/2017/05/08/tar/">阅读更多</a> 	
-	</div>	
-    
-</article>     
-     	
-    	  	
-  		
-    			
-
-<article class="article">		
-	   
-	<div class="article-header">
-	    
-		<a class="article-title" href="/2017/04/03/package-lock-json/">package-lock文件</a>  
-	       
-		 
-
-		<div class="article-meta">
-			<time>4月 03, 2017</time>
-			
-				<span class="iconfont icon-star"></span>
-				            
-						<a class="article-tag" href="/tags/npm/">npm</a>           
-				
-			
-		</div>
-	</div>
-
-
-	
-
-    
-	<div class="typo article-excerpt">	
-		
-			<p>今天在安装reduce的时候，ajv模块出现报错，于是就一通google</p>
-<p> 其实这里的问题也很简单，翻阅 <code>package-lock.json</code> 文件，里面可以找到webpack中的依赖文件</p>
-		  	  
-	</div>
-
-	<div class="article-bottom">
-		<a class="article-readmore" href="/2017/04/03/package-lock-json/">阅读更多</a> 	
-	</div>	
-    
-</article>     
-     	
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
 
 
 
-
-          </section> 
-      </div>            
-    
-    <a id="backTop">
-      <span>
-        <i class="iconfont icon-backtotop"></i>
-      </span>
-    </a> 
-
-  
-    
-    <div class="search-container sildeUpMin">
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
         <div class="search-header">
-            <input type="text" placeholder="输入你想搜索的" id="search-input" class="search-input">
-            <span class="search-cancel">
-                <i class="iconfont icon-cancel">
-            </i></span>
-        </div>
-        <div id="search-result" class="search-result"></div>
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
     </div>
- 
-     <div class="mobile-menu">      
+  </div>
 
-      
-      <img class="mobile-menu-icon" src="/images/favicon.png">   
-      
+</div>
+    </header>
 
-         
-            
-
-            <a class="mobile-menu-link" href="/">首页
-            </a>
-            
-         
-            
-
-            <a class="mobile-menu-link" href="/archives">归档
-            </a>
-            
-         
-            
-
-            <a class="mobile-menu-link" href="/tags">标签
-            </a>
-            
-         
-            
-
-            <a class="mobile-menu-link" href="/about">关于
-            </a>
-            
-         
-                          
-
-            <a class="mobile-menu-link mobile-menu-search" href="#">搜索 </a>                 
-            
-         
-      
-</div>        
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?ac2c7d1cdf2fffdf707d28e6ac012eb6"; 
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zaiaifreedom.github.io/2020/06/23/engineering/webpack-basic1/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zaiaifreedom">
+      <meta itemprop="description" content="Do not give up! even die!">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zaiaifreedom">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/23/engineering/webpack-basic1/" class="post-title-link" itemprop="url">webpack构建（一）</a>
+        </h2>
 
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
+              <time title="创建时间：2020-06-23 00:00:00 / 修改时间：22:50:12" itemprop="dateCreated datePublished" datetime="2020-06-23T00:00:00+08:00">2020-06-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端工程化/" itemprop="url" rel="index"><span itemprop="name">前端工程化</span></a>
+                </span>
+            </span>
 
-<script>
-(function(i,s,o,g,r,a,m){
-	i['GoogleAnalyticsObject']=r;
-	i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          
 
-ga('create', 'UA-125175556-1', 'auto');
-ga('send', 'pageview');
+        </div>
+      </header>
 
-</script>
-
-     
     
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <h2 id="什么是-webpack"><a href="#什么是-webpack" class="headerlink" title="什么是 webpack"></a>什么是 webpack</h2><p>用一张图来形象地进行解释：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1598468/202006/1598468-20200620223156642-1303010106.png" alt=""></p>
+<p>它是一个 <strong>静态的模块打包器</strong>， 从 <code>entry</code> 入口出发，递归地寻找模块间的依赖关系，比如：图片、css、js… 最后把这些模块资源进行整合成一个或多个 bundle</p>
+<h2 id="webpack-的入口"><a href="#webpack-的入口" class="headerlink" title="webpack 的入口"></a>webpack 的入口</h2><p>webpack中的 entry 是进行寻找依赖关系的起点，所有和它直接或者间接相关的依赖，都会直接被处理，随后进入到 bundle 中<br>支持两种配置方式：</p>
+<ul>
+<li>单入口<br>entry 是一个字符串</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &apos;./src/main.js&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>多入口<br>entry 是一个对象<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &apos;./src/app.js,</span><br><span class="line">    // ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="webpack-的出口"><a href="#webpack-的出口" class="headerlink" title="webpack 的出口"></a>webpack 的出口</h2><p>指定输出 bundle 的位置</p>
+<ul>
+<li><p>单入口场景</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &apos;./src/index.js&apos;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, &apos;dist&apos;),</span><br><span class="line">    filename: &apos;bundle.js&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多入口场景<br>文件名的指定使用 <strong>占位符</strong> 的方式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &apos;./src/index.js&apos;,</span><br><span class="line">    search: &apos;./src/search.js&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, &apos;dist&apos;),</span><br><span class="line">    filename: &apos;[name].js&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="webpack-中的-loader"><a href="#webpack-中的-loader" class="headerlink" title="webpack 中的 loader"></a>webpack 中的 loader</h2><p>webpack 开箱即用只支持 <code>js</code> <code>json</code> 两种文件类型，对于向 <code>vue</code> <code>jsx</code> 等其他文件类型，需要通过 <code>loader</code> 进行有效的转化，并添加到依赖树中。</p>
+<p>本身是一个函数，接受源文件作为参数，返回值是转化后的结果。</p>
+<p>常用 loader:</p>
+<ul>
+<li>babel-loader </li>
+<li>css-loader</li>
+<li>less-loader</li>
+<li>ts-loader</li>
+<li>file-loader 图片、字体富媒体文件</li>
+<li>raw-loader 把文件用字符串形式进行导入</li>
+<li>thread-loader 多进程打包，提升效率</li>
+</ul>
+<p>使用方法：<br>在 module 中的 rules 数组中进行配置， <code>test</code> 属性指定匹配的规则， <code>use</code> 属性指定使用的 loader 名称<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &apos;./src/index.js&apos;,</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        text: /\.txt$/,</span><br><span class="line">        use: &apos;raw-loader&apos;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="webpack中的插件-plugins"><a href="#webpack中的插件-plugins" class="headerlink" title="webpack中的插件 plugins"></a>webpack中的插件 plugins</h2><p><code>plugins</code> 可以理解为 <code>loader</code> 的一个强化，任何 <code>loader</code> 不能进行处理的事情都可以交给 <code>plugin</code> 进行解决<br>通常用于 bundle 文件的优化、资源管理和环境变量注入， <strong>它作用于整个打包构建过程的</strong></p>
+<p>比如： 打包之前需要手动删除 <code>dist</code> 文件</p>
+<p>常用的 plugins:</p>
+<ul>
+<li>CommonsChunkPlugin 把相同的 chunk 打包成一个公共的js</li>
+<li>CleanWebpackPlugin 清理构建目录</li>
+<li>ExtractTextWebpackPlugin 将 css 从 bundle 文件中提取成一个独立的 css 文件</li>
+<li>CopyWebpackPlugin 把文件或文件夹复制到打包后的输出目录</li>
+<li>HtmlWebpackPlugin 创建 html 文件去引入输出的 bundle</li>
+<li>UglifyjsWebpackPlugin 压缩js</li>
+<li>ZipWebpackPlugin 打包后的资源生成一个压缩的 zip 包</li>
+</ul>
+<p>plugin 的使用<br>先引入插件包， 然后添加到 <code>plugins</code> 数组中<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;)</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &apos;./src/index.js&apos;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, &apos;dist&apos;),</span><br><span class="line">    filename: &apos;bundle.js&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.txt$/,</span><br><span class="line">        use: &apos;raw-loader&apos;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new HtmlWebpackPlugin(&#123; template: &apos;./src/index.html&apos; &#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="webpack-中的模式-mode"><a href="#webpack-中的模式-mode" class="headerlink" title="webpack 中的模式 mode"></a>webpack 中的模式 mode</h2><p>mode 用来指定当前的构建环境是 <code>production</code> 、<code>development</code> 、<code>node</code> 设置 mode 可以使用 webpack 内置的函数，默认值是 <code>production</code></p>
+<p>内置函数功能</p>
+<ul>
+<li>development 设置 <code>process.env.NODE_ENV</code> 的值为 <code>development</code>, 开启 <code>NamedChunksPlugin</code> 和 <code>NamedModulesPlugin</code> 主要是在热更新阶段，可以在控制台打印出哪个模块发生了变化</li>
+<li>production 设置 <code>process.env.NODE_ENV</code> 的值为 <code>production</code>, 开启 <code>FlagDependencyUsagePlugin</code> 、<code>FlagIncludedChunksPlugin</code> … 主要会给js进行压缩，判断代码的副作用等等</li>
+<li>none 不开启任何优化</li>
+</ul>
+<p>使用方法：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  mode: &apos;development&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="资源解析"><a href="#资源解析" class="headerlink" title="资源解析"></a>资源解析</h2><h3 id="es6-文件处理"><a href="#es6-文件处理" class="headerlink" title="es6 文件处理"></a>es6 文件处理</h3><p>使用 <code>babel-loader</code> 来进行转化， 而 <code>babel-loader</code> 又依赖 <code>babel</code> ， 所以我们还要引入 <code>babel</code> ，它的配置文件是 <code>.babelrc</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i -D @babel/core @babel/preset-env babel-loader</span><br></pre></td></tr></table></figure></p>
+<p>babel 的配置：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;presets&quot;: [</span><br><span class="line">    &quot;@babel/preset-env&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;plugins&quot;: [</span><br><span class="line">    &quot;@babel/proposal-class-properties&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="react-文件处理"><a href="#react-文件处理" class="headerlink" title="react 文件处理"></a>react 文件处理</h3><p>在 presets 中添加 <code>@babel/preset-react</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i  react react-dom</span><br><span class="line">npm i @babel/preset-react -D</span><br></pre></td></tr></table></figure></p>
+<p>修改 presets 配置<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;presets&quot;: [</span><br><span class="line">    &quot;@babel/preset-env&quot;,</span><br><span class="line">    &quot;@babel/preset-react&quot;</span><br><span class="line">  ],</span><br></pre></td></tr></table></figure></p>
+<p>写react相关的代码<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const React from &apos;react&apos;</span><br><span class="line">const ReactDom from &apos;react-dom&apos;</span><br><span class="line"></span><br><span class="line">class App extends React.Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;div&gt;Hi&lt;/div&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDom.render(</span><br><span class="line">  &lt;App/&gt;,</span><br><span class="line">  document.querySelector(&apos;#root&apos;)</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
+<h3 id="less-、css-文件的处理"><a href="#less-、css-文件的处理" class="headerlink" title="less 、css 文件的处理"></a>less 、css 文件的处理</h3><p>使用 <code>css-loader</code> 加载 <code>.css</code> 文件，并转成 commonjs 对象； <code>style-loader</code> 将样式通过 <code>&lt;style&gt;</code> 标签插入到 head 中<br>使用 <code>less less-loader</code> 处理 <code>.less</code> 文件</p>
+<p>使用方法：<br>loader 的调用是链式的，从右向左进行调用; css 文件需要在模块中手动引入<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.css$/,</span><br><span class="line">        use: [</span><br><span class="line">          &apos;style-loader&apos;,</span><br><span class="line">          &apos;css-loader&apos;</span><br><span class="line">        ]</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.less$/,</span><br><span class="line">        use: [</span><br><span class="line">          &apos;style-loader&apos;,</span><br><span class="line">          &apos;css-loader&apos;,</span><br><span class="line">          &apos;less-loader&apos;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="图片、字体-文件的处理"><a href="#图片、字体-文件的处理" class="headerlink" title="图片、字体 文件的处理"></a>图片、字体 文件的处理</h3><p>使用 <code>file-loader</code> 处理文件和字体， 使用 <code>url-loader</code> 也可以处理，小图片可以设置 base64</p>
+<p>使用方法：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.(png|jpg|gif|svg|jpeg)$/,</span><br><span class="line">        use: &apos;file-loader&apos;</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.(ttf|woff|woff2|eot|otf)$/,</span><br><span class="line">        use: &apos;file-loader&apos;</span><br><span class="line">      &#125;,</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>url-loader</code> 使用方法：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.(png|jpg|gif|svg|jpeg)$/,</span><br><span class="line">        use: &#123;</span><br><span class="line">          loader: &apos;url-loader&apos;,</span><br><span class="line">          options: &#123;</span><br><span class="line">            limit: 10240</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="文件的监听"><a href="#文件的监听" class="headerlink" title="文件的监听"></a>文件的监听</h3><p>当文件发生变化的时候，自动打包构建<br>开启监听的方式：</p>
+<ul>
+<li>命令行启动时，加上 <code>--watch</code> 参数</li>
+<li>在配置 webpack.config.js 中设置 <code>watch: true</code></li>
+</ul>
+<p>文件监听的原理：<br>webpack 通过轮询的方式判断文件最后编辑的时间是否变化，某个文件的编辑时间发生了变化并不会立即告诉监听者，而是等待 <code>aggregateTimeout</code> 过后进行打包刷新</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  watch: true,</span><br><span class="line">  watchOptions: &#123;</span><br><span class="line">    // 忽略监听的文件，默认是空</span><br><span class="line">    ignored: /node_modules/,</span><br><span class="line">    // 监听到文件变化后的 300ms 再去执行，默认是 300ms</span><br><span class="line">    aggregateTimeout: 300,</span><br><span class="line">    // 轮询文件的周期，默认每秒询问 1000 次</span><br><span class="line">    poll: 1000</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="webpack-中的热更新"><a href="#webpack-中的热更新" class="headerlink" title="webpack 中的热更新"></a>webpack 中的热更新</h3><p>使用 <code>webpack-dev-server</code> 进行监听，不会频繁刷新浏览器，它不是直接输出文件，而是寄放在内存中, 没有磁盘的 I/O 操作<br>使用了 <code>HotModuleReplacementPlugin</code> 插件</p>
+<p>使用方法：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  mode: &apos;development&apos;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new webpack.HotModuleReplacementPlugin()</span><br><span class="line">  ],</span><br><span class="line">  devServer: &#123;</span><br><span class="line">    contentBase: &apos;./dist&apos;,</span><br><span class="line">    hot: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">  &quot;dev&quot;: &quot;wepack-dev-server --open&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>日常开发中 <code>webpack-dev-middleware</code> 也可以实现热更新，通常用于制定更灵活的方案</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// webpack.config.js</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    hello: [&apos;webpack-hot-middleware/client?noInfo=true&amp;reload=true&apos;, &apos;./src/index.js&apos;],</span><br><span class="line">    world: [&apos;webpack-hot-middleware/client?noInfo=true&amp;reload=true&apos;, &apos;./src/world.js&apos;]</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new webpack.HotModuleReplacementPlugin()</span><br><span class="line">  ],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// server.js</span><br><span class="line">const express = require(&apos;express&apos;)</span><br><span class="line">const webpack = require(&apos;webpack&apos;)</span><br><span class="line">const webpackDevMiddleware = require(&apos;webpack-dev-middleware&apos;)</span><br><span class="line">const hotMiddleWare = require(&apos;webpack-hot-middleware&apos;)</span><br><span class="line"></span><br><span class="line">const app = express()</span><br><span class="line">const config = require(&apos;./webpack.config.js&apos;)</span><br><span class="line">const compiler = webpack(config)</span><br><span class="line"></span><br><span class="line">app.use(webpackDevMiddleware(compiler, &#123;</span><br><span class="line">  publicPath: config.output.publicPath</span><br><span class="line">&#125;))</span><br><span class="line"></span><br><span class="line">app.use(hotMiddleWare(compiler, &#123;</span><br><span class="line">   log: false,</span><br><span class="line">   heartbeat: 2000</span><br><span class="line">&#125;))</span><br><span class="line"></span><br><span class="line">app.listen(3000, function() &#123;</span><br><span class="line">  console.log(&apos;dev server running port: 3000&apos;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="webpack-中热更新的原理"><a href="#webpack-中热更新的原理" class="headerlink" title="webpack 中热更新的原理"></a>webpack 中热更新的原理</h3><p>先来了解几个概念：</p>
+<ul>
+<li>webpack compiler 把 js 编译成 bundle</li>
+<li>HMR Server 把热更新后的文件通过 websocket | sse 输出给 HMR Runtime (被提前放在 bundle 中)</li>
+<li>Bundle Server 提供浏览器端 bundle 的访问</li>
+<li>HMR Runtime 会注入到浏览器，跟 HMR Server 进行交互</li>
+<li>bundle.js 更新后的输出的文件</li>
+</ul>
+<p>分为两个阶段：<br>启动阶段： 文件系统进行编译，经过 wk 进行编译打包，打包之后会交由 <code>Bundle Server</code> 进行分发， 并在分发的 <code>bundle.js</code> 中注入 <code>HMR Runtime</code><br>文件的更新阶段： 文件系统变化被 wk 监听编译，然后发送给 <code>HMR Server</code> 哪些文件变化，告诉给 <code>HMR Runtime</code>, 通常是以一个 json 文件形式进行传输，<br>再由 <code>HMR Runtime</code> 进行改变</p>
+<h3 id="文件指纹"><a href="#文件指纹" class="headerlink" title="文件指纹"></a>文件指纹</h3><p>常用的类型有三种：</p>
+<ul>
+<li>hash 和整个项目的构建相关，是工程级别的，只要项目文件有更改整个 hash 值就会更改</li>
+<li>chunkhash 和打包后的 chunk 有关，具体是根据不同的 <code>entry</code> 配置来分析依赖项并生成 <code>chunk</code>, 生成 <code>chunkhash</code></li>
+<li>contenthash 文件内容发生变化，<code>contenthash</code> 才会改变<br>三种 <code>hash</code> 主要是用来解决线上资源的 <code>文件缓存策略</code></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const miniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;)</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  mode: &apos;production&apos;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.join(__dirname, &apos;./dist&apos;),</span><br><span class="line">    filename: &apos;[name][chunkhash:8].js&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new miniCssExtractPlugin(&#123;</span><br><span class="line">      filename: &apos;[name][contenthash:8].css&apos;</span><br><span class="line">    &#125;)</span><br><span class="line">  ],</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.(png|svg|jpg|jpeg|gif)$/,</span><br><span class="line">        use: &#123;</span><br><span class="line">          loader: &apos;file-loader&apos;,</span><br><span class="line">          options: &#123;</span><br><span class="line">            name: &apos;[name][hash:8].[ext]&apos;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        test: /\.less$/,</span><br><span class="line">        use: [</span><br><span class="line">          MiniCssExtractPlugin.loader,</span><br><span class="line">          &apos;css-loader&apos;,</span><br><span class="line">          &apos;less-loader&apos;</span><br><span class="line">        ]</span><br><span class="line">      &#125;,</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>备注：webpack警告打包文件过大，建议分片</strong><br>WARNING in webpack performance recommendations:<br>You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.<br>For more info visit <a href="https://webpack.js.org/guides/code-splitting/" target="_blank" rel="noopener">https://webpack.js.org/guides/code-splitting/</a></p>
+<h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><p>webpack4 内置了 <code>uglifyjs-webpack-plugin</code> , 可以手动下载控制并行压缩<br>使用 <code>optimize-css-assets-webpack-plugin cssnano</code> 对css进行压缩<br>使用 <code>html-webpack-plugin</code> 进行文件压缩 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  plugins: [</span><br><span class="line">    new HtmlWebpackPlugin(&#123; </span><br><span class="line">      template: &apos;./src/index.html&apos;,</span><br><span class="line">      filename: &apos;index_1.html&apos;,</span><br><span class="line">      chunks: [&apos;hello&apos;, &apos;world&apos;],</span><br><span class="line">      inject: true,</span><br><span class="line">      minify: &#123;</span><br><span class="line">        html5: true,</span><br><span class="line">        collapseWhitespace: true,</span><br><span class="line">        preserveLineBreaks: false,</span><br><span class="line">        minifyCSS: true,</span><br><span class="line">        minifyJS: true,</span><br><span class="line">        removeComments: false</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;),</span><br><span class="line">    new optimizeCssAssetsWebpackPlugin(&#123;</span><br><span class="line">      assetNameRegExp: /\.css$/g,</span><br><span class="line">      cssProcessor: require(&apos;cssnano&apos;)</span><br><span class="line">    &#125;),</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="清理输出目录"><a href="#清理输出目录" class="headerlink" title="清理输出目录"></a>清理输出目录</h3><p>1、在 script 中增加脚本命令<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm -rf ./dist &amp;&amp; webpack</span><br></pre></td></tr></table></figure></p>
+<p>2、使用 <code>CleanWebpackPlugin</code> 插件, 默认删除 output 指定的目录<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">const &#123; CleanWebpackPlugin &#125; = require(&apos;clean-webpack-plugin&apos;)</span><br><span class="line"></span><br><span class="line">// ...</span><br><span class="line">plugins: [</span><br><span class="line">  new CleanWebpackPlugin()</span><br><span class="line">]</span><br><span class="line">// ...</span><br></pre></td></tr></table></figure></p>
+<h3 id="css-兼容性问题"><a href="#css-兼容性问题" class="headerlink" title="css 兼容性问题"></a>css 兼容性问题</h3><p>使用 <code>autoprefixer</code> 插件，是 css 的后置处理器，代码生成完成后进行处理<br>根据 <code>caniuse</code> 网站进行前缀优化， 通常和 <code>postcss-loader</code> 配置使用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// ...</span><br><span class="line">&#123;</span><br><span class="line">  loader: &apos;postcss-loader&apos;,</span><br><span class="line">  options: &#123;</span><br><span class="line">    plugins: () =&gt; [</span><br><span class="line">      require(&apos;autoprefixer&apos;)(&#123;</span><br><span class="line">        browsers: [&apos;last 2 version&apos;, &apos;&gt;1%&apos;, &apos;ios 7&apos;]</span><br><span class="line">      &#125;)</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">// ...</span><br></pre></td></tr></table></figure>
+<h3 id="css中-rem-转换"><a href="#css中-rem-转换" class="headerlink" title="css中 rem 转换"></a>css中 rem 转换</h3><p>关于像素和手机屏幕密度等的问题，我还没彻底从工艺设备的角度理解，但是用 “田” 字模型去理解我们开发中的 retina 屏以及其他的3倍屏…<br>其实从编程的角度而言，已然够用。 <img src="https://github.com/jawil/blog/issues/21" alt="参考资料"></p>
+<p>手机分辨率进行适配的方式：</p>
+<ul>
+<li>css 媒体查询</li>
+<li>rem 全局的相对单位 <code>font-size of the root element</code>， 而 <code>px</code> 是一个固定单位值，在不同分辨率的手机上是一样的<br>使用 <code>px2rem-loader</code> 转换 <code>rem</code> 为 <code>px</code></li>
+<li><code>viewport</code> 方案</li>
+</ul>
+<p>页面渲染时，要根据手机分辨率计算根元素的 <code>font-size</code> 的值，</p>
+<ul>
+<li>利用手淘方案 <code>lib-flexible</code> <img src="https://github.com/amfe/lib-flexible" alt="lib-flexible"></li>
+<li>结合使用场景编写，比如为了计算方便可以设置 750px 对应的 1rem = 100px； 同时 750/100 = clientWidth/htmlFontSize</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">  * 以下这段代码是用于根据移动端设备的屏幕分辨率计算出合适的根元素的大小</span><br><span class="line">  * 当设备宽度为375(iPhone6)时，根元素font-size=16px; 依次增大；</span><br><span class="line">  * 限制当为设备宽度大于768(iPad)之后，font-size不再继续增大</span><br><span class="line">  * scale 为meta viewport中的缩放大小</span><br><span class="line">  */</span><br><span class="line">(function (doc, win) &#123;</span><br><span class="line">  var docEl = win.document.documentElement;</span><br><span class="line">  var resizeEvt = &apos;orientationchange&apos; in window ? &apos;orientationchange&apos; : &apos;resize&apos;;</span><br><span class="line">  var dpr = window.devicePixelRatio || 1;</span><br><span class="line">  var metaEl = doc.querySelector(&apos;meta[name=&quot;viewport&quot;]&apos;);</span><br><span class="line">  var scale = 1 / dpr;</span><br><span class="line">  /**</span><br><span class="line">  * ================================================</span><br><span class="line">  *   设置data-dpr和viewport</span><br><span class="line">  *   1px线条的显示问题解决：1px的CSS像素，占用的物理也是1</span><br><span class="line">  × ================================================</span><br><span class="line">  */</span><br><span class="line"></span><br><span class="line">  docEl.setAttribute(&apos;data-dpr&apos;, dpr);</span><br><span class="line">  // 动态改写meta:viewport标签</span><br><span class="line">  &lt;!-- if (!metaEl) &#123;</span><br><span class="line">    metaEl = doc.createElement(&apos;meta&apos;);</span><br><span class="line">    metaEl.setAttribute(&apos;name&apos;, &apos;viewport&apos;);</span><br><span class="line">    metaEl.setAttribute(&apos;content&apos;, &apos;width=device-width, initial-scale=&apos; + scale + &apos;, maximum-scale=&apos; + scale + &apos;, minimum-scale=&apos; + scale + &apos;, user-scalable=no&apos;);</span><br><span class="line">    document.documentElement.firstElementChild.appendChild(metaEl);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    metaEl.setAttribute(&apos;content&apos;, &apos;width=device-width, initial-scale=&apos; + scale + &apos;, maximum-scale=&apos; + scale + &apos;, minimum-scale=&apos; + scale + &apos;, user-scalable=no&apos;);</span><br><span class="line">  &#125; --&gt;</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">    * ================================================</span><br><span class="line">    *   设置根元素font-size</span><br><span class="line">    * 当设备宽度为375(iPhone6)时，根元素font-size=16px; </span><br><span class="line">    × ================================================</span><br><span class="line">    */</span><br><span class="line">  var refreshRem = function () &#123;</span><br><span class="line">    var clientWidth = win.innerWidth</span><br><span class="line">                      || doc.documentElement.clientWidth</span><br><span class="line">                      || doc.body.clientWidth;</span><br><span class="line"></span><br><span class="line">    if (!clientWidth) return;</span><br><span class="line">    var fz;</span><br><span class="line">    var width = clientWidth;</span><br><span class="line">    if (width &gt;= 768) &#123;</span><br><span class="line">      fz = 16 * 768 / 375;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      fz = 16 * width / 375;</span><br><span class="line">    &#125;</span><br><span class="line">    docEl.style.fontSize = fz + &apos;px&apos;;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  // detect 0.5px supports</span><br><span class="line">  if (dpr &gt;= 2) &#123;</span><br><span class="line">    var fakeBody = document.createElement(&apos;body&apos;)</span><br><span class="line">    var testElement = document.createElement(&apos;div&apos;)</span><br><span class="line">    testElement.style.border = &apos;.5px solid transparent&apos;</span><br><span class="line">    fakeBody.appendChild(testElement)</span><br><span class="line">    docEl.appendChild(fakeBody)</span><br><span class="line">    if (testElement.offsetHeight === 1) &#123;</span><br><span class="line">      docEl.classList.add(&apos;hairlines&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">    docEl.removeChild(fakeBody)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (!doc.addEventListener) return;</span><br><span class="line">  win.addEventListener(resizeEvt, refreshRem, false);</span><br><span class="line">  doc.addEventListener(&apos;DOMContentLoaded&apos;, refreshRem, false);</span><br><span class="line">  refreshRem();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;)(document, window);</span><br></pre></td></tr></table></figure>
+<h3 id="资源内联"><a href="#资源内联" class="headerlink" title="资源内联"></a>资源内联</h3><p>把 <code>font css js ...</code> 内联到 html 中<br>优点： </p>
+<ul>
+<li>页面框架的初始化脚本（最先执行）</li>
+<li>css 内联避免页面的样式闪动</li>
+<li>请求层面可以减少 http 网络的请求数</li>
+</ul>
+<p>使用 <code>raw-loader</code> 内联 html  <code>npm i raw-loader@0.5.1 -D</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  &lt;%= require(&apos;raw-loader!babel-loader!./meta.html&apos;) %&gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>使用 <code>style-loader</code> 或者 <code>html-inline-css-webpack-plugin</code> 内联css</p>
+<h3 id="tree-shaking（摇树优化）"><a href="#tree-shaking（摇树优化）" class="headerlink" title="tree shaking（摇树优化）"></a>tree shaking（摇树优化）</h3><p>webpack2 开始支持，需要使用 es6 的语法，Nodejs中的 cjs 是不支持的。思想：DCE<br>代码中不会达到，代码的结果不会被用到，或代码只写不读，都会被删除<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if (false) &#123;</span><br><span class="line">  console.log(&apos;...&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>原理：利用 es6 模块的特点：</p>
+<ul>
+<li>只能作为模块顶层的语句出现</li>
+<li>import 的模块只能是字符串常量</li>
+<li>import binding 是 immutable</li>
+</ul>
+<p>代码擦除： <code>uglify</code> 阶段删除无用的代码, 要注意在某些可能产生“副作用”的代码中，<code>tree-shaking</code> 会失效</p>
 
+      
+    </div>
 
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<footer id="footer">	    
-
-		
-		<div class="footer-copyright">
-		&copy;
-		
-		2018		
-	
-		Feiliangyu
-		<br>
-
-		Theme By
-		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>
-		<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-		</div>
-
-	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</footer>   
 
   
 
-    <script src="/nayo.bundle.js"></script>           
-  </body>        
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="zaiaifreedom"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">zaiaifreedom</p>
+  <div class="site-description" itemprop="description">Do not give up! even die!</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zaiaifreedom" title="GitHub → https://github.com/zaiaifreedom" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/2090680016@qq.com" title="E-Mail → 2090680016@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zaiaifreedom</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
