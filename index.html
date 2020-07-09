@@ -192,6 +192,112 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zaiaifreedom.github.io/2020/07/09/vue-think/观察者设计模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zaiaifreedom">
+      <meta itemprop="description" content="Do not give up! even die!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zaiaifreedom">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/09/vue-think/观察者设计模式/" class="post-title-link" itemprop="url">观察者设计模式理解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-09 00:00:00 / 修改时间：23:37:13" itemprop="dateCreated datePublished" datetime="2020-07-09T00:00:00+08:00">2020-07-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/设计模式/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>观察者设置模式（Observer）定义对象一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖他的对象都得到通知并发生改变。</p>
+<p>相关名词：</p>
+<p>依赖：Dependents</p>
+<p>发布-订阅： Publish-Subscribe</p>
+<p>源-监听：Source-Listener</p>
+<h3 id="面向抽象编程"><a href="#面向抽象编程" class="headerlink" title="面向抽象编程"></a>面向抽象编程</h3><p><strong>依赖倒置原则中，要求应该面向抽象进行编程，而不是面向细节</strong>。<br>面向抽象进行编程的思想，可以启发更多的思考，比如：为什么要抽象出 某某者、某某类。</p>
+<p><img src="/Users/feiliangyu/Documents/HexoBlog/source/_posts/vue-think/观察者设计模式.assets/image-20200709230842834.png" alt="image-20200709230842834"></p>
+<p>上面这张图，分别对 Subject 和 Observer 进行了一层抽象，这就是观察者基本的结构</p>
+<ol>
+<li><p>抽象观察者角色 Observer<br>为所有具体的观察者定义一个接口，得到主题的通知信息后，进行同步响应，一般包含一个叫做 update 方法做同步响应</p>
+</li>
+<li><p>抽象主题角色 Subject</p>
+<p>主题角色把所有的观察者对象保存在集合中，提供管理工作，添加和删除</p>
+<p>并且提供通知工作，当状态发生改变时，对观察者进行通知</p>
+</li>
+<li><p>具体的主题角色 ConcreteSubject</p>
+<p>实现抽象主题的接口协议，当状态发生变化的时候，通知观察者</p>
+</li>
+<li><p>具体的观察者角色 ConcreteObserver<br>实现抽象观察者的接口协议，完成自身相关的同步活动</p>
+</li>
+</ol>
+<h3 id="观察者模式的核心"><a href="#观察者模式的核心" class="headerlink" title="观察者模式的核心"></a>观察者模式的核心</h3><p>观察者模式的核心在于对观察者的管理和维护，以及发送通知</p>
+<p>消息的发布和订阅，在程序当中就是消息的发布者去调用订阅者相关的方法</p>
+<p>观察者模式，将消息的发布者和订阅者进行了解耦，不再是直接的方法调用，而是通过引入了 Observer 这样的角色，完成了发布者和订阅者之间的解耦，也是一种形式上的 “方法调用” 的解耦。</p>
+<h3 id="要点总结"><a href="#要点总结" class="headerlink" title="要点总结"></a>要点总结</h3><p>观察者模式是在<strong>一对多的依赖场景中，对消息发布者和消息订阅者的解耦，</strong>在观察者和被观察者之间建立了一个抽象的耦合，而不是强关联。</p>
+<p>通过<strong>引入观察者角色，发布者不依赖具体的观察者，从而Subject和Observer可以独立发展。</strong></p>
+<p>被观察者仅仅知道有N个观察者，他们以集合的形式被管理，都是Observer角色，但是完全不知道具体的观察者。</p>
+<p>观察者模式<strong>支持广播</strong>，被观察者会向所有的观察者发送消息。</p>
+<p>增加新的观察者时，不需要修改客户端代码，只需要扩展Observer接口即可，<strong>满足开闭原则</strong>。</p>
+<p>一个观察者，也可能是一个被观察者，如果出现观察者调用链，将会发生多米诺骨牌效应不断地进行调用，后果可能是难以预知的。</p>
+<p>所以<strong>要谨慎识别双重身份的对象</strong>，也就是即是观察者也是被观察者的对象。</p>
+<p>被观察者不知道具体的观察者，也更不可能知道观察者具体的行为，当发生状态变化时，被观察者一个小举动，可能引起很大的性能消耗，而被观察者对此毫不知情，可能仍旧以为云淡风轻。</p>
+<h3 id="观察者模式的应用"><a href="#观察者模式的应用" class="headerlink" title="观察者模式的应用"></a>观察者模式的应用</h3><p>当一个对象状态的改变，需要同时改变其他对象时，可以考虑观察者模式；</p>
+<p>当一个对象必须通知其他人时，但是他又不知道到底是谁时，可以考虑观察者模式；</p>
+<p>或者希望将一个抽象模型中的两个关联部分解耦，以便独立发展，提高复用性；</p>
+<p>解耦不表示断开，仍旧需要联系，可以借助于观察者模式进行联系。</p>
+<p>总之</p>
+<p>观察模式通过引入观察者角色，将调用者与被调用者解耦，通过观察者角色联系。</p>
+<p>但凡类似“广播”“发布订阅”的场景，都可以考虑是否可用。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zaiaifreedom.github.io/2020/07/02/vue-think/响应式原理篇（二）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -706,20 +812,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
