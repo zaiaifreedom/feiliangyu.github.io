@@ -28,12 +28,12 @@
 <meta property="og:site_name" content="zaiaifreedom">
 <meta property="og:description" content="观察者设置模式（Observer）定义对象一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖他的对象都得到通知并发生改变。 相关名词： 依赖：Dependents 发布-订阅： Publish-Subscribe 源-监听：Source-Listener 面向抽象编程依赖倒置原则中，要求应该面向抽象进行编程，而不是面向细节。面向抽象进行编程的思想，可以启发更多的思考，比如：为什么要抽象出">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://zaiaifreedom.github.io/Users/feiliangyu/Documents/HexoBlog/source/_posts/vue-think/观察者设计模式.assets/image-20200709230842834.png">
-<meta property="og:updated_time" content="2020-07-09T15:37:13.629Z">
+<meta property="og:image" content="https://zaiaifreedom.github.io/2020/07/09/vue-think/观察者设计模式/image-20200709230842834.png">
+<meta property="og:updated_time" content="2020-07-10T03:48:30.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="观察者设计模式理解">
 <meta name="twitter:description" content="观察者设置模式（Observer）定义对象一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖他的对象都得到通知并发生改变。 相关名词： 依赖：Dependents 发布-订阅： Publish-Subscribe 源-监听：Source-Listener 面向抽象编程依赖倒置原则中，要求应该面向抽象进行编程，而不是面向细节。面向抽象进行编程的思想，可以启发更多的思考，比如：为什么要抽象出">
-<meta name="twitter:image" content="https://zaiaifreedom.github.io/Users/feiliangyu/Documents/HexoBlog/source/_posts/vue-think/观察者设计模式.assets/image-20200709230842834.png">
+<meta name="twitter:image" content="https://zaiaifreedom.github.io/2020/07/09/vue-think/观察者设计模式/image-20200709230842834.png">
 
 <link rel="canonical" href="https://zaiaifreedom.github.io/2020/07/09/vue-think/观察者设计模式/">
 
@@ -218,10 +218,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-09 00:00:00 / 修改时间：23:37:13" itemprop="dateCreated datePublished" datetime="2020-07-09T00:00:00+08:00">2020-07-09</time>
+              <time title="创建时间：2020-07-09 00:00:00" itemprop="dateCreated datePublished" datetime="2020-07-09T00:00:00+08:00">2020-07-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-10 11:48:30" itemprop="dateModified" datetime="2020-07-10T11:48:30+08:00">2020-07-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -249,7 +255,7 @@
 <p>发布-订阅： Publish-Subscribe</p>
 <p>源-监听：Source-Listener</p>
 <h3 id="面向抽象编程"><a href="#面向抽象编程" class="headerlink" title="面向抽象编程"></a>面向抽象编程</h3><p><strong>依赖倒置原则中，要求应该面向抽象进行编程，而不是面向细节</strong>。<br>面向抽象进行编程的思想，可以启发更多的思考，比如：为什么要抽象出 某某者、某某类。</p>
-<p><img src="/Users/feiliangyu/Documents/HexoBlog/source/_posts/vue-think/观察者设计模式.assets/image-20200709230842834.png" alt="image-20200709230842834"></p>
+<p><img src="/2020/07/09/vue-think/观察者设计模式/image-20200709230842834.png" alt="image-20200709230842834"></p>
 <p>上面这张图，分别对 Subject 和 Observer 进行了一层抽象，这就是观察者基本的结构</p>
 <ol>
 <li><p>抽象观察者角色 Observer<br>为所有具体的观察者定义一个接口，得到主题的通知信息后，进行同步响应，一般包含一个叫做 update 方法做同步响应</p>

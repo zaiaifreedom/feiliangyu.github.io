@@ -215,10 +215,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-09 00:00:00 / 修改时间：23:37:13" itemprop="dateCreated datePublished" datetime="2020-07-09T00:00:00+08:00">2020-07-09</time>
+              <time title="创建时间：2020-07-09 00:00:00" itemprop="dateCreated datePublished" datetime="2020-07-09T00:00:00+08:00">2020-07-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-10 11:48:30" itemprop="dateModified" datetime="2020-07-10T11:48:30+08:00">2020-07-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -246,7 +252,7 @@
 <p>发布-订阅： Publish-Subscribe</p>
 <p>源-监听：Source-Listener</p>
 <h3 id="面向抽象编程"><a href="#面向抽象编程" class="headerlink" title="面向抽象编程"></a>面向抽象编程</h3><p><strong>依赖倒置原则中，要求应该面向抽象进行编程，而不是面向细节</strong>。<br>面向抽象进行编程的思想，可以启发更多的思考，比如：为什么要抽象出 某某者、某某类。</p>
-<p><img src="/Users/feiliangyu/Documents/HexoBlog/source/_posts/vue-think/观察者设计模式.assets/image-20200709230842834.png" alt="image-20200709230842834"></p>
+<p><img src="/2020/07/09/vue-think/观察者设计模式/image-20200709230842834.png" alt="image-20200709230842834"></p>
 <p>上面这张图，分别对 Subject 和 Observer 进行了一层抽象，这就是观察者基本的结构</p>
 <ol>
 <li><p>抽象观察者角色 Observer<br>为所有具体的观察者定义一个接口，得到主题的通知信息后，进行同步响应，一般包含一个叫做 update 方法做同步响应</p>
@@ -321,10 +327,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-02 00:00:00 / 修改时间：23:39:23" itemprop="dateCreated datePublished" datetime="2020-07-02T00:00:00+08:00">2020-07-02</time>
+              <time title="创建时间：2020-07-02 00:00:00" itemprop="dateCreated datePublished" datetime="2020-07-02T00:00:00+08:00">2020-07-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-10 11:29:32" itemprop="dateModified" datetime="2020-07-10T11:29:32+08:00">2020-07-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -577,7 +589,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-01 00:08:52" itemprop="dateModified" datetime="2020-07-01T00:08:52+08:00">2020-07-01</time>
+                <time title="修改时间：2020-07-10 11:48:05" itemprop="dateModified" datetime="2020-07-10T11:48:05+08:00">2020-07-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -601,7 +613,7 @@
 
       
           <h2 id="什么是-webpack"><a href="#什么是-webpack" class="headerlink" title="什么是 webpack"></a>什么是 webpack</h2><p>用一张图来形象地进行解释：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1598468/202006/1598468-20200620223156642-1303010106.png" alt=""></p>
+<p><img src="/2020/06/23/engineering/webpack打包配置基础篇（一）/image-20200710114706882.png" alt="image-20200710114706882"></p>
 <p>它是一个 <strong>静态的模块打包器</strong>， 从 <code>entry</code> 入口出发，递归地寻找模块间的依赖关系，比如：图片、css、js… 最后把这些模块资源进行整合成一个或多个 bundle</p>
 <h2 id="webpack-的入口"><a href="#webpack-的入口" class="headerlink" title="webpack 的入口"></a>webpack 的入口</h2><p>webpack中的 entry 是进行寻找依赖关系的起点，所有和它直接或者间接相关的依赖，都会直接被处理，随后进入到 bundle 中<br>支持两种配置方式：</p>
 <ul>
